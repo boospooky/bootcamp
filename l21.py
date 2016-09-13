@@ -31,7 +31,9 @@ plt.close()
 # plt.show()
 
 import seaborn as sns
-sns.set()
+rc={'lines.linewidth': 2, 'axes.labelsize': 18, 'axes.titlesize': 18}
+sns.set(rc=rc)
+
 
 # Generate the histogram for the low-density fed mother
 _ = plt.hist(xa_low)
